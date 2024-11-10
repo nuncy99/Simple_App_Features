@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/textMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Enter Your Message"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SAVE" />
+
+        <Button
+            android:id="@+id/displayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="DISPLAY" />
+
+        <Button
+            android:id="@+id/clearBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="CLEAR" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/viewTextMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textMultiLine"
+        android:text="Note: When the user clicks the “Save” button the texts from the EditText will be stored and the EditText will be cleared. When the user clicks the “Display” button the data will be displayed on the TextView.
+“Clear” button will clear the data from the Shared Preferences."
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="textMultiLine"
+        android:text="Shared Preferences: Shared Preferences is a lightweight data storage mechanism in Android that allows developers to store small amounts of key-value pair data."
+        android:textColor="@color/black"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/nexActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Click Here To Perform the Next Task"
+        />
+
+</LinearLayout>

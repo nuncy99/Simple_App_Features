@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/editHereBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="200dp"
+        android:text="CLICK HERE TO EDIT"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"/>
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="Enter your Text Here"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:text="save"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="hello"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="200dp"
+        android:visibility="gone"/>
+</LinearLayout>

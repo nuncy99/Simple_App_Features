@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/dog">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:cardCornerRadius="40dp"
+        android:background="@color/orange"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:padding="8dp"
+        android:layout_marginTop="300dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/orange"
+            android:orientation="vertical">
+
+
+            <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:ems="10"
+            android:hint="Name"
+            android:textColor="@color/white"
+            android:inputType="text"
+            android:textColorHint="#928585" />
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:hint="Email"
+            android:id="@+id/emailText"
+            android:textColorHint="#928585"/>
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="password"
+            android:textColor="@color/white"
+            android:textColorHint="#928585"
+            android:password="true"
+            android:id="@+id/passwordText"/>
+            <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+             android:layout_marginEnd="30dp"
+            android:hint="Address"
+             android:textColor="@color/white"
+             android:textColorHint="#928585"
+            android:inputType="textMultiLine"
+            android:scrollbars="vertical"
+            android:minLines="2"
+            android:id="@+id/adressText"/>
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:text="Select a Gender"
+
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RadioGroup
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:id="@+id/genderButton">
+                    <RadioButton
+                    android:id="@+id/maleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Male"
+                    android:layout_marginStart="30dp" />
+                    <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/femaleRadioButton"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="30dp"
+                    android:text="Female"
+                    android:layout_marginTop="3dp"/>
+        </RadioGroup>
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:textColor="#0B0A0A"
+        android:text="Are you sure the details are correct?" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:backgroundTint="@color/orange"
+        android:id="@+id/submitButton"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_layout"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="30dp"
+        android:id="@+id/viewFinalText"/>
+</LinearLayout>

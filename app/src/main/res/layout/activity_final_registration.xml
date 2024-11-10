@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/catty">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="260dp"
+        app:cardElevation="40dp"
+        app:cardCornerRadius="30dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/nameText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_edit_text2"
+            android:hint="Enter You Name"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/custom_edit_text2"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/dateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_edit_text2"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginStart="5dp"
+                    android:text="SELECT A DATE"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:padding="16dp"/>
+
+                <Button
+                    android:id="@+id/selectDateText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="SELECT DATE OF BIRTH"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/custom_edit_text2"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        <EditText
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/custom_edit_text2"
+            android:hint="Enter You Email ID"/>
+
+            <EditText
+                android:id="@+id/passwordText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/custom_edit_text2"
+                android:hint="Enter Your Password"
+                android:password="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_edit_text2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text="Select "
+                android:textSize="18dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="5dp"
+                android:popupBackground="@drawable/custom_edit_text2"
+                android:layout_marginEnd="5dp"
+                android:id="@+id/spinnerGender"
+                android:backgroundTint="@color/black" />
+
+        </LinearLayout>
+            <EditText
+                android:id="@+id/confirmPasText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/custom_edit_text2"
+                android:hint="Confirm Your Password"
+                android:layout_marginBottom="20dp"
+                android:password="true"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="SAVE"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/blue"/>
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to Login"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>
